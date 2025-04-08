@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Иврит и Каббала</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      background: linear-gradient(180deg, #000, #111);
+      background-attachment: fixed;
+      background-size: cover;
+      color: white;
+      overflow-x: hidden;
+    }
+    section {
+      padding: 60px 20px;
+      text-align: center;
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 1s ease;
+    }
+    section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    h1, h2 {
+      font-weight: bold;
+      margin-bottom: 20px;
+      font-size: 28px;
+      background: linear-gradient(90deg, #fff, #000);
+      background-size: 200% auto;
+      color: transparent;
+      background-clip: text;
+      -webkit-background-clip: text;
+      animation: bwShine 4s linear infinite;
+    }
+    @keyframes bwShine {
+      0% { background-position: 0% center; }
+      100% { background-position: 200% center; }
+    }
+    .letters {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 15px;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+    .letter {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      padding: 20px;
+      font-size: 24px;
+      text-align: center;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .letter:hover {
+      background: rgba(255,255,255,0.1);
+    }
+    .popup {
+      position: fixed;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: rgba(0,0,0,0.8);
+      padding: 15px 20px;
+      border-radius: 10px;
+      display: none;
+      z-index: 10;
+    }
+    .text-block {
+      max-width: 600px;
+      margin: 0 auto;
+      line-height: 1.8;
+      font-size: 18px;
+      white-space: pre-wrap;
+      background: linear-gradient(90deg, #eee, #222);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      animation: bwShine 6s linear infinite;
+    }
+  </style>
+</head>
+<body>
+
+  <section class="visible">
+    <h1>Буквы иврита</h1>
+    <div class="letters" id="letters"></div>
+    <div class="popup" id="popup"></div>
+  </section>
+
+  <section>
+    <h2>Молитва Ана Бекоах</h2>
+    <div class="text-block">
+      אנא בכח גדולת ימינך תתיר צרורה<br>
+      קבל רנת עמך שגבנו טהרנו נורא<br>
+      נא גבור דורשי יחודך כבבת שמרם<br>
+      ברכם טהרם רחמי צדקתך תמיד גמלם<br>
+      חסין קדוש ברוב טובך נהל עדתך<br>
+      יחיד גאה לעמך פנה זוכרי קדושתך<br>
+      שועתנו קבל ושמע צעקתנו יודע תעלומות
+    </div>
+  </section>
+
+  <section>
+    <h2>Псалмы</h2>
+    <div class="text-block">
+      תהילים כ"ג:<br>
+      ה' רעי לא אחסר<br>
+      בנאות דשא ירביצני, על מי מנוחות ינהלני<br>
+      נפשי ישובב, ינחני במעגלי צדק למען שמו<br>
+      גם כי אלך בגיא צלמות לא אירא רע כי אתה עמדי<br>
+      שבטך ומשענתך המה ינחמוני<br>
+      תערך לפני שלחן נגד צררי<br>
+      דשנת בשמן ראשי, כוסי רויה<br>
+      אך טוב וחסד ירדפוני כל ימי חיי<br>
+      ושבתי בבית ה' לאורך ימים
+    </div>
+  </section>
+
+  <section>
+    <h2>Известные каббалисты</h2>
+    <div class="text-block">
+      — Рабби Шимон бар Йохай: автор "Зоар", жил во II веке.  
+      — Аризаль (Ицхак Лурия): XVI век, основатель лурианской каббалы.  
+      — Рамхаль (Моше Хаим Луццато): XVIII век, философ и каббалист.  
+      — Бааль Сулам (Йехуда Ашлаг): XX век, комментатор "Зоар", автор "Учения Десяти Сфирот".
+    </div>
+  </section>
+
+  <section>
+    <h2>Главные книги Каббалы</h2>
+    <div class="text-block">
+      — Сефер Йецира: "Книга Созидания", одна из древнейших книг.  
+      — Зоар: "Книга Сияния", мистический комментарий к Торе.  
+      — Эц Хаим: "Древо Жизни", учение Аризаля, описывающее миры и сфирот.  
+      — Учение Десяти Сфирот: систематизация каббалы Бааля Сулама.
+    </div>
+  </section>
+
+  <section>
+    <h2>Молитва "Модэ Ани"</h2>
+    <div class="text-block">
+      מודה אני לפניך מלך חי וקיים<br>
+      שהחזרת בי נשמתי בחמלה<br>
+      רבה אמונתך
+    </div>
+  </section>
+
+  <section>
+    <h2>Благословения на еду</h2>
+    <div class="text-block">
+      — На хлеб: ברוך אתה ה'... המוציא לחם מן הארץ  
+      — На фрукты с деревьев: ברוך אתה ה'... בורא פרי העץ  
+      — На овощи и фрукты с земли: ברוך אתה ה'... בורא פרי האדמה  
+      — На выпечку (пироги, печенье): ברוך אתה ה'... בורא מיני מזונות  
+      — На вино или виноградный сок: ברוך אתה ה'... בורא פרי הגפן  
+      — На воду и другие напитки: ברוך אתה ה'... שהכל נהיה בדברו
+    </div>
+  </section>
+
+  <script>
+    const lettersData = [
+      { letter: "א", name: "Алеф", meaning: "Беззвучная гортанная буква" },
+      { letter: "ב", name: "Бет", meaning: "Дом" },
+      { letter: "ג", name: "Гимел", meaning: "Верблюд" },
+      { letter: "ד", name: "Далет", meaning: "Дверь" },
+      { letter: "ה", name: "Хе", meaning: "Окно, дыхание" },
+      { letter: "ו", name: "Вав", meaning: "Крючок, соединение" },
+      { letter: "ז", name: "Заин", meaning: "Меч" },
+      { letter: "ח", name: "Хет", meaning: "Ограда" },
+      { letter: "ט", name: "Тет", meaning: "Добро, змея" },
+      { letter: "י", name: "Йод", meaning: "Рука" },
+      { letter: "כ", name: "Каф", meaning: "Ладонь" },
+      { letter: "ל", name: "Ламед", meaning: "Учение, жезл" },
+      { letter: "מ", name: "Мем", meaning: "Вода" },
+      { letter: "נ", name: "Нун", meaning: "Рыба" },
+      { letter: "ס", name: "Самех", meaning: "Опора" },
+      { letter: "ע", name: "Аин", meaning: "Глаз" },
+      { letter: "פ", name: "Пе", meaning: "Уста" },
+      { letter: "צ", name: "Цади", meaning: "Праведность, крюк" },
+      { letter: "ק", name: "Куф", meaning: "Святыня" },
+      { letter: "ר", name: "Реш", meaning: "Голова" },
+      { letter: "ש", name: "Шин", meaning: "Зуб" },
+      { letter: "ת", name: "Тав", meaning: "Знак, печать" }
+    ];
+
+    const lettersContainer = document.getElementById('letters');
+    const popup = document.getElementById('popup');
+
+    lettersData.forEach(data => {
+      const div = document.createElement('div');
+      div.className = 'letter';
+      div.textContent = data.letter;
+      div.onclick = () => {
+        popup.innerHTML = `<strong>${data.name}</strong>: ${data.meaning}`;
+        popup.style.display = 'block';
+        setTimeout(() => {
+          popup.style.display = 'none';
+        }, 3000);
+      };
+      lettersContainer.appendChild(div);
+    });
+
+    // Scroll animations
+    const sections = document.querySelectorAll("section");
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+        }
+      });
+    }, { threshold: 0.1 });
+
+    sections.forEach(section => observer.observe(section));
+  </script>
+</body>
+</html>
